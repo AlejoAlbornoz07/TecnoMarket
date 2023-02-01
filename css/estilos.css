@@ -54,7 +54,30 @@ nav > ul > li > a{
 .contenedor_logo{
     display: flex;
     align-items: center;
+}
 
+#contenido{
+    width: 80%;
+    margin: 10px auto;
+}
+
+.productos{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.productos .producto {
+    width: 25%;
+}
+
+.productos .producto img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.productos .producto .contenedor{
+    width: 80%;
 }
 
 footer{
