@@ -81,6 +81,7 @@ nav > ul > li > a{
 .productos .producto .contenedor{
     width: 80%;
     background-color: white;
+    margin: auto;
 }
 
 .productos .producto .contenedor .detalles{
@@ -103,7 +104,7 @@ footer > .marcas {
 
 footer > .logo {
     display: flex;
-    width: 100%;
+    width: auto;
     justify-content: center;
     align-items: center;
     height: calc(100% - 80px);
@@ -115,4 +116,65 @@ footer > .marcas > img {
 
 footer > .logo > img {
     width: 100px;
+}
+
+.menu{
+    width: 40px;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    display: none;
+}
+
+/*MEDIA QUERIES*/
+
+/*TABLET*/
+@media (max-width: 1024px){
+    .productos .producto{
+        width: 50%;
+    }
+}
+
+/*SMARTPHONE*/
+@media (max-width: 480px){
+
+    .menu{
+        display: block;
+    }
+
+    .productos .producto{
+        width: 100%;
+    }
+
+    header {
+        flex-direction: column;
+        height: 90px;
+        overflow: hidden;
+        transition: all 0.8s;
+    }
+
+    header > div {
+        width: 100%;
+    }
+
+    header .contenedor_logo{
+        justify-content: center;
+    }
+
+    header .logo{
+        margin-top: 10px;
+    }
+
+    nav{
+        justify-content: center;
+    }
+    nav > ul{
+        margin: 0;
+    }
+
+    nav > ul > li {
+        display: block;
+        padding: 10px 0;
+        text-align: center;
+    }
 }
