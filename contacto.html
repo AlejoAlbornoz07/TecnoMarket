@@ -42,13 +42,28 @@
         <form action="">
 
             <label for="nombre">Nombre</label>
-            <input type="text" name="nombre", id="Nombre">
+            <input type="text" name="nombre" id="nombre">
             <br>
             <label for="email">Correo Electronico</label>
-            <input type="email" name="email", id="email">
+            <input type="email" name="email" id="email">
             <br>
             <label for="tipo_solicitud">Tipo Solicitud</label>
-            <select name="tipo_solicitud", id="tipo_solicitud">
+            <select name="tipo_solicitud" id="tipo_solicitud">
+                <option value="seleccionar">Seleccionar</option>
+                <option value="sugerencia">Sugerencia</option>
+                <option value="reclamo">Reclamo</option>
+                <option value="consulta">Consulta</option>
+            </select>
+            <br>
+            <label for="mensaje">Mensaje</label>
+            <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
+            <br>
+            <input type="checkbox" name="avisos" id="avisos">
+            <label for="avisos">Desea recibir sugerencias/avisos?</label>
+            <br>
+            <input type="reset" value="Limpiar">
+            <button type="button" id="guardar">Guardar</button>
+
         </form>
 
     </div>
@@ -68,7 +83,16 @@
 
     </footer>
 
+    <script
+  src="https://code.jquery.com/jquery-3.6.3.min.js"
+  integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+  crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>
+
+
     <script src="js/menu.js"></script>
+    <script src="js/formulario_jquery.js"></script>
+    
 
 </body>
 </html>
