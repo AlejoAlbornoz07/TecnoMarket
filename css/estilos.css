@@ -126,6 +126,14 @@ footer > .logo > img {
     display: none;
 }
 
+label.error {
+    color: darkred;
+}
+
+input.error, select, textarea{
+    border: 1px solid darkred;
+}
+
 /*MEDIA QUERIES*/
 
 /*TABLET*/
