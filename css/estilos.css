@@ -60,35 +60,35 @@ nav > ul > li > a{/*con esto llegamos a los a del nav*/
 }
 
 #contenido{/*#contendor porque el dic tiene un id llamado contenido*/
-    width: 80%;
-    margin: 10px auto;
-    min-height: 100vh;
+    width: 80%;/*ancho en % de div padre*/
+    margin: 10px auto;/*la propiedad margin establece los magenes top,right,bottom,left*/
+    min-height: 100vh;/**/
 }
 
-.productos{
+.productos{/*porque es clase por eso el punto*/
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap;/*hace que los elementos tomen un ancho para que no se deformen*/
 }
 
-.productos .producto {
+.productos .producto {/*aqui porque es la clase hijo (.producto) de clase padre (.producto)*/
     width: 25%;
     margin-top: 10px;
 }
 
 .productos .producto img{
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
+    width: 100%;/*toma el 100% del pad*/
+    height: 300px;/*tamaño de 300px de alto, pero estira las imagenes verticalmente*/
+    object-fit: contain;/*con esto la imagen no se deforma*/
 }
 
 .productos .producto .contenedor{
     width: 80%;
     background-color: white;
-    margin: auto;
+    margin: auto;/*margen, crea un espacio entre los elementos, osea espacio fuera del elelemtno*/
 }
 
 .productos .producto .contenedor .detalles{
-    padding: 10px;
+    padding: 10px;/*crea un espacio dentro del elemento*/
 }
 /**/
 footer{
@@ -96,21 +96,21 @@ footer{
     background-color:  #2D3748;
 }
 
-footer > .marcas {
+footer .marcas {
     width: 100%;
     height: 80px;
     background-color: #4A5568;
-    display: flex;
-    justify-content: space-around;
+    display: flex;/*hace que el contenido crezca horizontalmente*/
+    justify-content: space-around;/**/
     align-items: center;
 }
 
-footer > .logo {
+footer .logo {
     display: flex;
     width: auto;
     justify-content: center;
-    align-items: center;
-    height: calc(100% - 80px);
+    align-items: center;/*centra verticalmente*/
+    height: calc(100% - 80px);/*calcula que al 100% del padre le resta 80px de la clase marcas*/
 }
 
 footer > .marcas > img {
