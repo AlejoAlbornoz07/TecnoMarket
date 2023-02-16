@@ -1,5 +1,5 @@
 
-
+//en javascript llamamos a los elementos por el id
 let menu = document.getElementById("menu")
 let header = document.getElementById("header")
 let nav = document.getElementById("nav")

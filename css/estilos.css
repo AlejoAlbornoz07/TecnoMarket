@@ -62,7 +62,7 @@ nav > ul > li > a{/*con esto llegamos a los a del nav*/
 #contenido{/*#contendor porque el dic tiene un id llamado contenido*/
     width: 80%;/*ancho en % de div padre*/
     margin: 10px auto;/*la propiedad margin establece los magenes top,right,bottom,left*/
-    min-height: 100vh;/**/
+    min-height: 100vh;/*hace que el footer siempre quede abajo, saca el alto de laparte superior de la pantalla hasta el borde inferior de la pantalla, no importa la resolucion, en este caso se aumentan los 80px del header por ello queda 80px mas abajo*/
 }
 
 .productos{/*porque es clase por eso el punto*/
@@ -85,6 +85,7 @@ nav > ul > li > a{/*con esto llegamos a los a del nav*/
     width: 80%;
     background-color: white;
     margin: auto;/*margen, crea un espacio entre los elementos, osea espacio fuera del elelemtno*/
+                    /*Este se modifico para el responsive de los celulares para que quede centrado*/
 }
 
 .productos .producto .contenedor .detalles{
@@ -114,19 +115,19 @@ footer .logo {
 }
 
 footer > .marcas > img {
-    width: 45px;
+    width: 45px;/*ancho de 45px*/
 }
 
 footer > .logo > img {
     width: 100px;
 }
 
-.menu{
-    width: 40px;
-    position: absolute;
-    left: 10px;
-    top: 10px;
-    display: none;
+.menu{/*para el menu hamburguesa*/
+    width: 40px;/*ancho*/
+    position: absolute;/*sin este va a ocupar espacio verticcalmente, cuando se pone absolute es como sino ocupara el espacio vertical queda como flotando*/
+    left: 10px;/*coordenadas, va a quedar a 10px del borde izquierdo */
+    top: 10px;/*coordenadas, va a quedar a 10px del borde superior */
+    display: none;/*con esta propiedad, hacemos que no se vea en escritorio, solo queremos que se vea en smartphone*/
 }
 
 label.error {
@@ -136,7 +137,7 @@ label.error {
 input.error, select, textarea{
     border: 1px solid darkred;
 }
-
+/*AQUI COMIENZA EL RESPONSIVE*/
 /*MEDIA QUERIES*/
 
 /*TABLET*/
@@ -148,8 +149,7 @@ input.error, select, textarea{
 
 /*SMARTPHONE*/
 @media (max-width: 480px){
-
-    .menu{
+    .menu{/*con esta propiedad hacemos que el menu hamburguesa aparezca cuando sea smartphone*/
         display: block;
     }
 
@@ -157,33 +157,33 @@ input.error, select, textarea{
         width: 100%;
     }
 
-    header {
-        flex-direction: column;
-        height: 90px;
-        overflow: hidden;
+    header {/*para que no se deforme el header*/
+        flex-direction: column;/**/
+        height: 90px;/*en modo smartphone, queremos que el header inicie la hamburguesa cerrada, por ello le damos 90px de altura*/
+        overflow: hidden; /*con la propiedad hidden ocultamos todo lo quede por fuera del header como la ul del nav*/
         transition: all 0.8s;
     }
 
     header > div {
-        width: 100%;
+        width: 100%;/*como los div tenian 50% cada uno, entonces al intentar centrar el logo ahora, solo se centraba de del 50% por ello ahora se le da un ancho de 100% a cada div del header*/
     }
 
     header .contenedor_logo{
-        justify-content: center;
+        justify-content: center;/*para centrar pero ojo al comentario de arriba*/
     }
 
-    header .logo{
+    header .logo{/*margen supeior logo*/
         margin-top: 10px;
     }
 
     nav{
-        justify-content: center;
+        justify-content: center;/*para escritorio tiene un justify-content end, ahora va a estar centrado*/
     }
     nav > ul{
         margin: 0;
     }
 
-    nav > ul > li {
+    nav > ul > li {/*para los elementos de la lista*/
         display: block;
         padding: 10px 0;
         text-align: center;
