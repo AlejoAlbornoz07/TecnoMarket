@@ -12,14 +12,14 @@
     
     <header id="header">
         <img src="img/menuiconwhite.png" alt="menu" class="menu" id="menu">
-        <div class="contenedor_logo">
+        <div class="contenedor_logo"> <!--con class es como la ruta para poder darle estilos con css y se accede a ella con ".contenedor logo"-->
             <img src="img/MascotaNegocio.png" alt="logo" class="logo">
 
         </div>
         <div>
             <nav id="nav">
-                <ul>
-                    <li>
+                <ul><!--lista no ordenada-->
+                    <li><!--elelemtno 1 de la lista-->
                         <a href="">Inicio</a>
 
                     </li>
@@ -38,7 +38,8 @@
 
     </header>
 
-    <div id="contenido">
+    <div id="contenido"><!--La principal diferencia que existe en el #id y .class es que que el Id debe ser utilizado una sola vez dentro de la página en la que se está trabajando, mientras que la clase se puede repetir varias veces para diferentes elementos, 
+    para acceder al css es con #contenido -->
 
         <div class="slider">
             <div>
@@ -53,12 +54,12 @@
         </div>
 
 
-        <div class="productos">
+        <div class="productos"><!--Aqui van a estar todos los productos-->
 
-            <div class="producto">
-                <div class="contenedor">
-                    <img src="img/productos/acernitro.png" alt="acer">
-                    <div class="detalles">
+            <div class="producto"><!--este seria uno de los productos-->
+                <div class="contenedor"><!--contenedor para el producto-->
+                    <img src="img/productos/acernitro.png" alt="acer"><!--src es para la ruta de la imagen, con alt le damos el nombre -->
+                    <div class="detalles"><!--donde del div.contenedor va a estar el div.detalles-->
                         <h5>Acer</h5>
                         <h2>Nitro 5</h2>
                         <h3>$3'000.000 pesos</h3>

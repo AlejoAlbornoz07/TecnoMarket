@@ -21,42 +21,45 @@ header{
     display: flex;
 }
 
-header > div {
+header > div {/*Aqui los hijos inmediatos que sean de Header ocupan el 50%  cada uno*/
     width: 50%;
 }
 
-.logo{
-    width: 50px;
-    margin-left: 20px;
+.logo{/*cuando empieza con . es una clase de css que se puede reutilizar*/
+    width: 50px;/*Aqui el tama;o del logo 50*50px*/
+    margin-left: 20px;/*20 pixeles de izquierda a derecha*/
 }
 
-nav{
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    height: 100%;
+nav{/*este es el 50 del header*/
+    display: flex;/*hace que el contenido crezca horizontalmente*/
+    justify-content: flex-end; /*lo enviamos al fondo*/
+    height: 100%;/*con esto decimos que el nav ocupa todo el alto del header*/
+    align-items: center;/*con esto alineamos el nav verticalmente pero necesitamos primero darlo el 100% como la linea de arriba*/
+
+
 }
 
-nav > ul{
+nav > ul{/**/
     margin-right: 30px;
 }
 
-nav > ul > li{
-    display: inline;
-    margin-left: 5px;
+nav > ul > li{/*cada uno de los elementos de la lista*/
+    display: inline;/*con esto los elementos quedan uno al lado del otro*/
+    margin-left: 5px;/*con esto separo los elemtos 5px uno del otro*/
 }
 
-nav > ul > li > a{
-    color: white;
-    text-decoration: none;
+nav > ul > li > a{/*con esto llegamos a los a del nav*/
+    color: white;/*color */
+    text-decoration: none;/*y le quitamos el subrayado*/
 }
 
-.contenedor_logo{
-    display: flex;
-    align-items: center;
+.contenedor_logo{/*.contendedor_logo porque es una clase*/
+    display: flex;/*aqui no funciona heigth100% porque es un div*/
+    /*height: 100%;*/
+    align-items: center;/*alineamos verticalmente*/
 }
 
-#contenido{
+#contenido{/*#contendor porque el dic tiene un id llamado contenido*/
     width: 80%;
     margin: 10px auto;
     min-height: 100vh;
