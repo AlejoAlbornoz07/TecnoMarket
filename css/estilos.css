@@ -130,12 +130,12 @@ footer > .logo > img {
     display: none;/*con esta propiedad, hacemos que no se vea en escritorio, solo queremos que se vea en smartphone*/
 }
 
-label.error {
+label.error {/*para los mensajes de validacion del formulario*/
     color: darkred;
 }
 
-input.error, select, textarea{
-    border: 1px solid darkred;
+input.error, select, textarea{/**/
+    border: 1px solid darkred;/*queda con un borde rojo*/
 }
 /*AQUI COMIENZA EL RESPONSIVE*/
 /*MEDIA QUERIES*/
