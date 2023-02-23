@@ -53,6 +53,20 @@ nav > ul > li > a{/*con esto llegamos a los a del nav*/
     text-decoration: none;/*y le quitamos el subrayado*/
 }
 
+#d_pagina{/*Flexbox es la forma mas moderna de centrar cosas dentro de una página, y convierte el diseño de layouts responsivos en una actividad mucho mas sencilla de lo que solía ser. Sin embargo, no es soportado completamente en navegadores antiguos como Internet Explorer.
+    Para centrar un elemento horizontalmente con Flexbox, solo aplica display: flex y justify-content: center al elemento padre:‌*/
+    display: flex;
+    justify-content: center;
+}
+
+#resultado{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    gap: 20px;
+
+}
+
 .contenedor_logo{/*.contendedor_logo porque es una clase*/
     display: flex;/*aqui no funciona heigth100% porque es un div*/
     /*height: 100%;*/
