@@ -1,4 +1,6 @@
 
+//https://www.youtube.com/watch?v=YvYmWPpCncc&ab_channel=Ing.Ren%C3%A9Dom%C3%ADnguez
+
 const apiRick=async (pagina)=>{//programamos una funcion asincrona, pagina es el valor
   let url="https://rickandmortyapi.com/api/character/?page="+pagina;
   const apu= await fetch(url);

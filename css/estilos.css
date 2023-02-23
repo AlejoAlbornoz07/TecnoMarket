@@ -151,11 +151,27 @@ label.error {/*para los mensajes de validacion del formulario*/
 input.error, select, textarea{/**/
     border: 1px solid darkred;/*queda con un borde rojo*/
 }
+
+.galeria{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 30px;
+}
+
+.galeria img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+
+}
 /*AQUI COMIENZA EL RESPONSIVE*/
 /*MEDIA QUERIES*/
 
 /*TABLET*/
 @media (max-width: 1024px){
+    .galeria{
+        grid-template-columns: 1fr 1fr;
+    }
     .productos .producto{
         width: 50%;
     }
@@ -163,6 +179,9 @@ input.error, select, textarea{/**/
 
 /*SMARTPHONE*/
 @media (max-width: 480px){
+    .galeria{
+        grid-template-columns: 1fr;
+    }
     .menu{/*con esta propiedad hacemos que el menu hamburguesa aparezca cuando sea smartphone*/
         display: block;
     }
